@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicación actual..."
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar ubicación" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛍️ Productos disponibles"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/btnVerCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver carrito 🛒"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
